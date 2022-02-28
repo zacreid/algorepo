@@ -398,4 +398,39 @@ public class Sorting {
 
         Sort(array, 0, array.length - 1, comparator);
     }
+
+    public static void main(String[] args) {
+        Integer[] a1 = {5,15,89,45,125,85,4,546,88,77,565,44,12,99,47,33,57,18,50,78};
+        Integer[] a2 = {5,15,89,45,125,85,4,546,88,77,565,44,12,99,47,33,57,18,50,78};
+        Integer[] a3 = {5,15,89,45,125,85,4,546,88,77,565,44,12,99,47,33,57,18,50,78};
+        Integer[] a4 = {5,15,89,45,125,85,4,546,88,77,565,44,12,99,47,33,57,18,50,78};
+        Comparator<Integer> c = Comparator.comparing(Integer::intValue);
+
+        Integer[][] A = {a1, a2, a3, a4};
+
+        System.out.println("Unsorted arrays -- ");
+
+        for (Integer[] i : A) {
+            for (Integer n : i) {
+                System.out.print(n);
+                System.out.print(" ")
+            }
+            System.out.println("")
+        }
+
+        bubbleSort(a1, c);
+        selectionSort(a2, c);
+        quickSort(a3, c);
+        mergeSort(a4, c);
+
+        System.out.println("Sorted arrays --");
+
+        for (Integer[] i : A) {
+            for (Integer n : i) {
+                System.out.print(n);
+                System.out.print(" ")
+            }
+            System.out.println("")
+        }
+    }
 }
