@@ -1,0 +1,37 @@
+----------------------------------------------------------------------------
+java BinaryDump 40 < 4runs.bin                    -> 40bits
+java RunLength - < 4runs.bin | java BinaryDump    -> 32bits
+
+Compression Ratio                                 -> 40bits/32bits = 1.25
+----------------------------------------------------------------------------
+java RunLength - < 4runs.bin > 4runsrle.bin
+java BinaryDump 119 < 4runsrle.bin                -> 32bits
+
+Compression Ratio                                 -> 40bits/32bits = 1.25
+----------------------------------------------------------------------------
+java BinaryDump 8 < abra.txt                      -> 96bits
+java RunLength - < abra.txt | java BinaryDump 8   -> 412bits
+
+Compression Ratio                                 -> 96bits/416bits = 0.23..
+This is happening as when you get characters that are non repeating you
+create an excess amount of data as you add extra data.
+----------------------------------------------------------------------------
+java RunLength - < abra.txt > abrarle.txt
+java BinaryDump 119 < abrarle.txt                 -> 416bits
+
+Compression Ratio                                 -> 96bits/416bits = 0.23..
+----------------------------------------------------------------------------
+java BinaryDump 119 < q32x48.bin                  -> 1536bits
+java RunLength - < q32x48.bin > q32x48rle.bin
+java BinaryDump 119 < q32x48rle.bin               -> 1144bits
+
+Compression Ratio                                 -> 1536bits/1144bits = 1.3
+
+java BinaryDump 119 < q64x96.bin                  -> 6144bits
+java RunLength - < q64x96.bin > q64x96rle.bin
+java BinaryDump 119 < q64x96rle.bin               -> 2296bits
+
+Compression Ratio                                 -> 6144bits/2296bits = 2.8
+The larger file has the ability to have more repeating bytes leading to
+increased compression
+-----------------------------------------------------------------------------
