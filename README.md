@@ -30,14 +30,14 @@ The space complexity of this approach is n.
 The quicksort inwhich sorting is done around a pivot, where items are swaped and this proccess is repeated until it is completely sorted.
 The time complexity of this algorithm is O(n log n), with its worst case being O(n^2).
 The space complexity is at best log n and at worst n.
-* Sorting Algorithms [here](https://github.com/COMP20290-Algorithms/algorithms-repo-zacreid/blob/main/sorting/src/Sorting.java)
+* Sorting Algorithms [here](.../blob/main/sorting/src/Sorting.java)
 
 
 ### Binary Search
 Binary search is an algorithm which works on an already sorted dataset, it works by comparing the center point of this dataset to then determine if it should search the left side or right side of this point. It then repeats this proccess until the item is found or there is no more elemets to search for.
 The time complexity of this algorithm is log n.
 The space complexity of this algorithm is 1.
-* Binary Search Algorithm [here](https://github.com/COMP20290-Algorithms/algorithms-repo-zacreid/blob/main/binary-search/src/Search.java)
+* Binary Search Algorithm [here](.../blob/main/binary-search/src/Search.java)
 
 
 ### String Search
@@ -49,14 +49,14 @@ The space complextiy of this is n + m.
 The KMP algorithm essentially uses what we learn about the string as we progress through it to speed up string searching.
 The time complexity of this O(m(n-m+1)).
 The space complexity of this is n + m
-* String Search Algorithms [here](https://github.com/COMP20290-Algorithms/algorithms-repo-zacreid/blob/main/string-search/src/stringSearch.java)
+* String Search Algorithms [here](.../blob/main/string-search/src/stringSearch.java)
 
 
 ### Huffman Compression
 Huffman compression is a compression algorithm which builds a dictionary in the shape of a tree (based on the occurence of bytes) and then encodes the target data using this tree.
 Huffman has a time complexity of O(n log n)
 The space complexity of this is log n
-* Huffman Compression Algorithm [here](https://github.com/COMP20290-Algorithms/algorithms-repo-zacreid/blob/main/huffman-compression/Huffman.java)
+* Huffman Compression Algorithm [here](.../blob/main/huffman-compression/Huffman.java)
 
 
 ### Dynamic Programming
@@ -70,7 +70,7 @@ The space complexity of the dynamic is n.
 The knapsack problem is a optimization problem which maximises value while constraining to the maximum weight of a 'sack'
 The time complexity of this algorithm is nw where n is input size and w is the permutation of weights.
 The space complexity of this algorithm is n.
-* Dynamic Programing Algorithms [here](https://github.com/COMP20290-Algorithms/algorithms-repo-zacreid/blob/main/dyanmic-programing/src/main.java)
+* Dynamic Programing Algorithms [here](.../blob/main/dyanmic-programing/src/main.java)
 
 ## Authors
 
